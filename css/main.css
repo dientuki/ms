@@ -389,6 +389,13 @@
     line-height: 24px;
     width: 60%;
     margin-top: 40px; }
+
+    #conclusion .hidden-xs, #disclaimer .hidden-xs {
+    display: block; }
+  #conclusion .visible-xs,  #disclaimer .visible-xs{
+    display: none; }
+
+
   @media screen and (min-width: 1366px) and (max-width: 1680px) {
     #feature .content-elements {
       padding: 85px 0; }
@@ -683,9 +690,9 @@
   #hero-banner .m-hero-item.f-x-center .f-hero-cover-center {
     min-width: 80%; }
   #hero-banner .c-heading-1.f-hero-heading {
-    font-size: 72px;
+    font-size: 62px;
     font-weight: 500;
-    line-height: 72px;
+    line-height: 82px;
     letter-spacing: 0;
     color: #ffffff;
     overflow: initial;
@@ -724,7 +731,7 @@
   #hero-banner .f-container-margin {
     margin: 0 64px; }
   #hero-banner .f-cover-width {
-    width: 69%; }
+    width: 80%; }
 
 
   @media screen and (max-width: 1797px) {
@@ -750,6 +757,7 @@
 
     #hero-banner .f-cover-image {
     background: url("../images/M-0_image_intro.jpg");
+    background-size: cover;
   }
     #hero-banner .m-hero-item.f-x-left .f-header-align > div {
       margin: 0 115px; }
@@ -1405,21 +1413,38 @@ body {
     z-index: 9;
   }
 
-   #hero-banner .f-cover-image {
-      height: calc(100vh - 100px); }
-  #feature .f-back-grey,#feature .f-back-blue{
-    background-color: #fff !important;
-  }
-
   #main-selector {
     display: none;
     visibility: hidden;
   }
+   #hero-banner .f-cover-image {
+      height: calc(100vh - 100px); }
 
-        #feature .visible-xs {
+#link1 .textAndImage.f-back-white {
+    margin: 0 0 50px 0 !important;
+}
+#feature {
+     margin: 0 !important; 
+}
+  #feature .f-back-grey,#feature .f-back-blue{
+    background-color: #fff !important;
+  }
+
+
+
+        #feature .visible-xs, #conclusion .visible-xs, #disclaimer .visible-xs {
         display: block; }
-      #feature .hidden-xs {
+      #feature .hidden-xs, #conclusion .hidden-xs, #disclaimer .hidden-xs {
         display: none; }
+        
+
+        #conclusion a.c-button[role=button],#conclusion button.c-button{
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 36px !important;
+          padding: 20px 0 !important;
+          margin-top: 100px !important;
+        }
 
   #introduction .f-img-box2{
     display: none;
@@ -1437,6 +1462,7 @@ body {
     height: 150px;
     border-top: 1px solid #fff;
     z-index: 999;
+
   }
 
 
@@ -1459,6 +1485,7 @@ body {
     padding:0;
     width: 100%;
     background: #0078D4;
+    z-index: 1;
   }
 
   .sticky-bar nav.c-in-page-navigation ul li.custom-menu-link {
@@ -1536,7 +1563,7 @@ body {
     padding-left: 0 !important;
 }
   #feature .title {
-    font-size: 42px  !important;
+    font-size: 42px !important;
     line-height: 46px !important;
     margin: 60px 0 !important;
     width: 100% !important;
@@ -1564,8 +1591,20 @@ body {
   text-align: center;
 }
 
+#conclusion .c-heading-3.f-heading-3 {
+    font-size: 46px !important;
+    line-height: 52px !important;
+  }
 
+  #conclusion .f-vertical-align-center {
+    display: block;
+}
 
+ #disclaimer .m-dis p{
+  font-size: 28px;
+  line-height: 40px;
+
+ }
   #link1 h1, #link2 h1, #link3 h1, #link1 h3, #link2 h3, #link3 h3  {
     display: none;
   }
@@ -1583,11 +1622,19 @@ body {
   @media screen and (min-width: 0px) and (max-width: 600px) {
 
 
-
+.margin-bottom {
+    margin-bottom: 30px !important;
+}
 
 
     .sticky-bar {
+    position: static;
+    width: 100%;
+    display:block;
+    visibility: visible;
     height: 75px;
+    border-top: 1px solid #fff;
+
   }
 
  .sticky-bar nav.c-in-page-navigation {
@@ -1608,6 +1655,10 @@ body {
 
   }
 
+.sticky-bar nav.c-in-page-navigation ul li.custom-menu-link-active {
+    background-color: #005DA6;
+    text-decoration: none;
+}
 
 nav.c-in-page-navigation>ul li>a {
     
@@ -1623,14 +1674,14 @@ nav.c-in-page-navigation>ul li>a {
 }
 
 .textAndImage .c-heading-3.f-heading-3 {
-    font-size: 32px !important;
-    line-height: 36px !important;
+    font-size: 25px !important;
+    line-height: 30px !important;
     margin-top: 20px !important;
   }
 
   .c-heading-4, .c-subheading-2 {
-    font-size: 20px !important;
-    line-height: 22px !important;
+        font-size: 21px !important;
+    line-height: 25px !important;
     margin: 0 !important;
         padding: 0 !important;
 
@@ -1639,12 +1690,12 @@ nav.c-in-page-navigation>ul li>a {
 
 .textAndImage .c-paragraph.f-paragraph {
     font-size: 18px !important;
-    line-height: 22px !important;
+    line-height: 21px !important;
 }
 
 #main-content ul {
     font-size: 18px !important;
-    line-height: 12px !important;
+    line-height: 21px !important;
     margin: 30px 3% !important;
 }
 
@@ -1657,20 +1708,54 @@ nav.c-in-page-navigation>ul li>a {
 
 
 #feature .text {
-    font-size: 20px !important;
-    line-height: 26px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
     width: 100% !important;
     margin:0 !important;
     padding: 0 !important;
 }
 
 #feature .title {
-    font-size: 30px !important;
-    line-height: 34px !important;
+    font-size: 21px !important;
+    line-height: 25px !important;
     width: 100% !important;
     margin: 30px 0px !important;
     padding: 0 !important;
 }
+
+#conclusion .c-heading-3.f-heading-3 {
+  width: 100% !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+}
+
+#conclusion a.c-button[role=button],#conclusion button.c-button {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    padding: 5px 0 !important;
+    margin-top: 50px !important;
+}
+
+#conclusion .f-conclusion-text {
+    position: relative;
+    padding-top: 60px  !important;
+    padding-bottom: 60px !important;
+}
+
+ #disclaimer .m-dis p{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 0 0 0;
+ }
+
+ #disclaimer a.c-button[role=button].collapse-section.section-title{
+  padding: 0;
+ }
+
+ #disclaimer .section-content-load h4{
+      margin-left: 0; 
+ }
 
   }
 
@@ -1821,6 +1906,41 @@ nav.c-in-page-navigation>ul li>a {
     margin-left: 30px;
 }
 
+#conclusion .f-conclusion-text {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+
+#conclusion .c-heading-3.f-heading-3 {
+    font-size: 26px;
+    line-height: 32px;
+    width: 90%;
+    }
+
+    #conclusion a.c-button[role=button], button.c-button{
+          width: 40%;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 10px;
+    }
+
+    #disclaimer .dis-col1 p, #disclaimer .dis-col2 p{
+  font-size: 18px;
+  line-height: 24px;
+  
+ }
+
+ #disclaimer .dis-col1{
+      padding-right: 3%  !important;
+  
+ }
+ #disclaimer .dis-col2{
+      padding-left: 3%  !important;
+  
+ }
+
 #link1 h2, #link2 h2, #link3 h2  {
   display: none;
  }
@@ -1851,7 +1971,7 @@ nav.c-in-page-navigation>ul li>a {
 /* ---- HD ------ */
 
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1441px) {
 
 
 .sticky-bar nav.c-in-page-navigation ul li.custom-menu-link {
@@ -1951,6 +2071,112 @@ nav.c-in-page-navigation>ul li>a {
 
 }
 
+
+/* ---- 1280 ------ */
+
+  @media screen and (min-width: 1025px) and (max-width: 1400px){
+
+
+
+
+.sticky-bar nav.c-in-page-navigation ul li.custom-menu-link {
+    width: 15vw;
+    height: 80px;
+  }
+
+
+
+.icon-menu p{
+  height: 100px;
+}
+
+
+.img-box1,.img-box2,.img-box3{
+  height: 180px;
+}
+
+.icon-menu [data-grid~=col-4]{
+  padding: 0 1vw;
+}
+
+
+#feature {
+    margin:  0; 
+}
+
+#feature .content-elements {
+    padding: 85px 8%;
+}
+
+#feature .content-elements .text-padding-left {
+    padding-left: 9% !important;
+}
+
+#feature .content-elements .text-padding-left .title {
+    width: 90%;
+}
+
+#feature .content-elements .text-padding-left .text {
+    width: 80%;
+}
+#feature .left-feature .title, #feature .left-feature .text {
+    width: 75%;
+    margin-left: 10%;
+}
+
+#feature .title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-top: 10px;
+}
+
+
+#feature .text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 21px;
+}
+
+.textAndImage .f-textAndImage-pad2 {
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+
+.textAndImage .c-heading-3.f-heading-3 {
+    font-size: 36px;
+    line-height: 44px;
+    padding: 0.5rem 6.5rem 0.5rem 0;
+}
+
+ .textAndImage .f-heading-t1 {
+    font-size: 72px;}
+
+}
+
+#link1 h2, #link2 h2, #link3 h2  {
+  display: none;
+ }
+
+
+#disclaimer p{
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4rem 0 3rem 0;
+}
+ #disclaimer .dis-col1 {
+    padding-right: 95px; 
+  }
+  #disclaimer .dis-col2 {
+    padding-left: 70px; 
+  }
+
+
+
+
+
+
+}
 
 /* ---- Hero breakpoints ------ */
 
