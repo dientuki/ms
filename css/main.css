@@ -878,18 +878,18 @@
 
 
 
-
+/*
 
 /*------------------------
     - Pivot -
---------------------------*/
+--------------------------
 .pivot-theme {
   padding-top: 50px;
   padding-bottom: 0px;
   /*.c-pivot>section[aria-hidden=false] { 
         height: 500px;
     }*/
-  /* Media Queries */ }
+  /* Media Queries *}
   .pivot-theme .c-pivot {
     padding: 0 12px; }
   .pivot-theme .c-pivot > div {
@@ -1011,7 +1011,7 @@
       -moz-column-gap: 35px; }
     .pivot-theme .textAndImage .f-img-right {
       text-align: inherit; } }
-
+*/
 /*------------------------
     - Scroll Menu -
 --------------------------*/
@@ -1403,6 +1403,11 @@ body {
   line-height: .75rem !important;
 }
 
+ #disclaimer h4{
+  font-size: 16px;
+  line-height: 12px;
+ }
+
 
 /* ---- 768 ------ */
 
@@ -1748,6 +1753,7 @@ nav.c-in-page-navigation>ul li>a {
     line-height: 20px;
     padding: 20px 0 0 0;
  }
+
 
  #disclaimer a.c-button[role=button].collapse-section.section-title{
   padding: 0;

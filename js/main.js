@@ -92,6 +92,12 @@ var downloadButton = (function() {
         $('body').addClass('download-active');
       });
 
+     $(document).on('click', '.download-active #download-pdf', function() {
+           var pdfUrl = $(this).find("a").attr('href');
+           window.open( pdfUrl,'_blank');
+    });
+
+
       $(document).on('click', '.download-active', function() {
         $('.demo__active').css('width', '0px');
         $('body').removeClass('download-active');
